@@ -72,3 +72,14 @@
 .text-normal {
     font-size: 18px;
 }
+
+/* div element */
+/* navbar */
+
+.nav {
+    width: 100vw;
+}
+
+.nav p {
+    text-decoration: none;
+}
