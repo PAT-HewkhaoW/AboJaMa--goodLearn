@@ -1,7 +1,21 @@
-:root {
-    --yellow: #ffe694;
+/* import */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* universal */
+*{
+    box-sizing: border-box;
 }
 
+:root {
+
+    /* color */
+    --yellow: #ffe283;
+
+    /* font family */
+
+
+    /* font style */
+}
 
 ::-webkit-selection {
     background: var(--yellow);
@@ -9,4 +23,52 @@
 
 ::selection  {
     background: var(--yellow);
+}
+
+
+/* element class */
+
+
+/* font class */
+/* font family */
+.fontTester {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/* font weight */
+.font-weight-100 {
+    font-weight: 100;
+}
+
+.font-weight-200 {
+    font-weight: 200;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 700;
+}
+
+.font-weight-800 {
+    font-weight: 800;
+}
+
+.font-weight-900 {
+    font-weight: 900;
+}
+
+/* text style */
+.text-normal {
+    font-size: 18px;
 }
