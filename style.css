@@ -1,0 +1,12 @@
+:root {
+    --yellow: #FFE590;
+}
+
+
+::-webkit-selection {
+    background: var(--yellow);
+}
+
+::selection  {
+    background: var(--yellow);
+}
