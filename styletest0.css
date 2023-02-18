@@ -134,7 +134,7 @@
  #menu
  {
    position: absolute;
-   width: 100vw;
+   width: 500px;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
@@ -143,6 +143,8 @@
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
+   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
    
    transform-origin: 0% 0%;
    transform: translate(-100%, 0);
@@ -162,4 +164,11 @@
  #menuToggle input:checked ~ ul
  {
    transform: none;
+ }
+
+ .content {
+  padding-left: 5%;
+  padding-right: 5%;
+  transform-origin: 0% 0%;
+  transform: translate( 0%, 500px);
  }
