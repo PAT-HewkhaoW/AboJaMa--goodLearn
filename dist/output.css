@@ -513,6 +513,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+/* selection text color */
+
+::-moz-selection {
+  color: rgb(33, 33, 33);
+  background: rgba(251, 204, 62, 0.5);
+}
+
+::selection {
+  color: rgb(33, 33, 33);
+  background: rgba(251, 204, 62, 0.5);
+}
+
 .container {
   width: 100%;
 }
