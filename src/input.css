@@ -8,7 +8,7 @@
 }
 
 ion-icon {
-  --ionicon-stroke-width: 48px;
+  --ionicon-stroke-width: 36px;
 }
 
 @tailwind components;
