@@ -129,7 +129,7 @@
     <div id="btncontainer" class="max-w-4xl justify-end flex mb-16 mx-auto">
       <button href="">
         <div
-          onclick="displayRadioValue()"
+          onclick="submit(),displaysumscore()"
           id="submit"
           class="flex py-1 px-3 border-2 border-whisper-900 rounded-full items-center space-x-4 pl-8 pr-6"
         >
@@ -144,8 +144,23 @@
       </button>
     </div>
 
-    <div id="displayscore"></div>
-    <div id="result" class></div>
+    <div
+      id="scorecontain"
+      class="hidden w-full max-w-4xl max-h-screen py-16 px-8 mx-auto space-y-7"
+    >
+      <div id="title" class="text-3xl font-bold text-center">คุณได้คะแนน</div>
+      <div class="text-9xl font-bold text-center" id="scoredisplay"></div>
+      <div id="btncontainer" class="w-full flex justify-between">
+        <a href="course.html" class="mx-auto mt-20">
+          <button
+            class="border-2 border-slate-800 rounded-full py-3 px-8 font-xl font-semibold"
+          >
+            กลับสู่คอร์ส
+          </button>
+        </a>
+      </div>
+    </div>
+
     <!-- script -->
     <script src="../src/quiz.js"></script>
   </body>

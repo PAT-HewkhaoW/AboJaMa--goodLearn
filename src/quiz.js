@@ -107,11 +107,17 @@ const quizdata = [
   },
 ];
 
+var sumscore = 0;
+
 // quizzcreater
+var score = 0;
 let tot = quizdata.length;
+let mainQUiz = document.getElementById("quiz_main_contianer");
+const submited = document.getElementById("submit");
+const scorecontain = document.getElementById("scorecontain");
+
 let choicelist = ["a", "b", "c", "d"];
 let questionArr = quizdata;
-let mainQUiz = document.getElementById("quiz_main_contianer");
 
 let selected = [];
 console.log(selected);
@@ -263,9 +269,8 @@ function displayscore() {
     }
   }
 }
-
+displayRadioValue();
 function displayRadioValue() {
-  var score = 0;
   for (let j = 0; j < 10; j++) {
     var ele = document.getElementsByName("answerfor" + (j + 1) + "-");
 
@@ -281,11 +286,20 @@ function displayRadioValue() {
       //   "Gender: " + ele[i].value;
     }
   }
+  sumscore = score;
   console.log(score);
 }
-function getselected() {}
-console.log(anslist);
-// function displayscore() {
-//   const displayscore = document.getElementById("displayscore");
-//   displayscore.innerText = score;
-// }
+
+console.log(sumscore);
+
+function submit() {
+  mainQUiz.classList.add("hidden");
+  submited.classList.add("hidden");
+}
+
+function displaysumscore() {
+  console.log(sumscore);
+  s = document.getElementById("scoredisplay");
+  s.innerHTML = sumscore + "/" + tot;
+  scorecontain.classList.toggle("hidden");
+}
