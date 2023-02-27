@@ -269,7 +269,7 @@ function displayscore() {
     }
   }
 }
-displayRadioValue();
+
 function displayRadioValue() {
   for (let j = 0; j < 10; j++) {
     var ele = document.getElementsByName("answerfor" + (j + 1) + "-");
@@ -286,11 +286,9 @@ function displayRadioValue() {
       //   "Gender: " + ele[i].value;
     }
   }
-  sumscore = score;
+
   console.log(score);
 }
-
-console.log(sumscore);
 
 function submit() {
   mainQUiz.classList.add("hidden");
@@ -298,8 +296,16 @@ function submit() {
 }
 
 function displaysumscore() {
-  console.log(sumscore);
+  console.log(score);
   s = document.getElementById("scoredisplay");
-  s.innerHTML = sumscore + "/" + tot;
+  s.innerHTML = score + "/" + tot;
   scorecontain.classList.toggle("hidden");
+}
+
+function percantage() {
+  if (score > 9) {
+    bar = document.getElementById("progress");
+    bar.classList.toggle("w-1/4");
+    bar.classList.toggle("w-1/2");
+  }
 }
