@@ -601,6 +601,10 @@ ion-icon {
   margin-bottom: 4rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -639,6 +643,14 @@ ion-icon {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-60 {
+  margin-bottom: 15rem;
+}
+
+.mb-80 {
+  margin-bottom: 20rem;
 }
 
 .block {
